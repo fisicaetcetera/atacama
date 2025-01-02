@@ -1,3 +1,2 @@
-# Avellar Tour: ÁSIA
-Viagem Avellar Tour Setembro 2025
-Dubai, Cingapura, Seul, Pequim, Shanghai, Xian, Tokyo
+# Avellar Tour: Atacama desert
+Viagem Avellar Tour Jan 2025
