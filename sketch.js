@@ -189,6 +189,12 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
     .bindPopup('Buenos Aires')
     .openPopup();
 
+  // Mendoza
+
+  L.marker(latlngsVolta[1]).addTo(map)
+    .bindPopup('Mensoza')
+    .openPopup();
+
   // 
   
 } //setup
