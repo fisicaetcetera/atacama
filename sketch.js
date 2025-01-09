@@ -121,7 +121,7 @@ map.fitBounds(polylineIda.getBounds());
               //const speed = posicao.speed.toString();
               //const heading = posicao.heading.toString();
               accuracy = posicao.accuracy;
-               L.marker(latlonuser).addTo(map).bindPopup("Você!<br>Latitude: " +latuser+"<br> Longitude: "+ lonuser+" <br>FALTA INCLUIR OS NOVOS HORÁRIOS").openPopup();
+               L.marker(latlonuser).addTo(map).bindPopup("Você!<br>Latitude: " +latuser+"<br> Longitude: "+ lonuser+" <br>FALTA INCLUIR OS NOVOS HORÁRIOS"+"<br>Bonelli-09/01/25").openPopup();
               L.circle(latlonuser, accuracy).addTo(map);
               //map.setView(latlonuser, 8); // ([latuser, lonuser], zoom)
               map.locate({setView: true, maxZoom: 4});
