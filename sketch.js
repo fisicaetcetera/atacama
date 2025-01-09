@@ -78,16 +78,19 @@ var latlngsIda = [
     [-5.759290, -35.368370], //Natal
     [-23.454, -46.534096], // Sao Paulo
     [-33.447487,-70.673676], //Santiago
+    [-22.453712, -68.925308], //Calama    
+    [ -22.91110000, -68.20113000],//São Pedro
     [-22.453712, -68.925308], //Calama
-    [ -22.91110000, -68.20113000],  // São Pedro
-    [-20.266562, -67.620552],  //  Uyuni
-    [-24.782932, -65.412155],  //Salta
+    [-33.447487,-70.673676], //Santiago    
     [-34.603722, -58.381592], //Buenos Aires
-    [-23.454, -46.534096] // Sao Paulo
+    [-24.782932, -65.412155],  //Salta
+    [-32.88945870, -68.84583860]
+ // Mendoza
 ];
 var latlngsVolta = [
-    [-23.454, -46.534096], // Sao Paulo
-    [-34.603722, -58.381592] //Buenos Aires
+    [-24.782932, -65.412155],  //Salta
+    [-32.88945870, -68.84583860],//Mendoza
+    [-23.454, -46.534096] // Sao Paulo
 ];
 var polylineIda = L.polyline(latlngsIda, {color: 'blue'}).addTo(map);
 var polylineVolta = L.polyline(latlngsVolta, {color: 'yellow'}).addTo(map);
@@ -157,10 +160,10 @@ map.fitBounds(polylineIda.getBounds());
     imageBounds = [ [-22.93416,-68.27426], [-21.93416,-67.27426]];
 L.imageOverlay(imageUrl, imageBounds).addTo(map); 
  
-  //Uyuni
-
-  L.marker(latlngsIda[5]).addTo(map)
-    .bindPopup('Uyuni')
+  //Yuni
+  [-20.266562, -67.620552]
+  L.marker([-20.266562, -67.620552]).addTo(map)
+    .bindPopup('Yuni')
     .openPopup();
     var imageUrl = './salarDeYuni.jpeg',
     imageBounds = [ [-20.266562, -67.620552], [-19.266562, -66.620552]];
@@ -173,7 +176,7 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
 
   // Salta
-  L.marker(latlngsIda[6]).addTo(map)
+  L.marker(latlngsIda[8]).addTo(map)
     .bindPopup('Salta')
     .openPopup();
     
@@ -191,5 +194,5 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 } //setup
 
 //casa de la moneda -33.443018 -70.65387
-
+//MENDOZA: [-32.88945870, -68.84583860]
 
