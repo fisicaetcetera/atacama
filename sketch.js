@@ -121,39 +121,36 @@ map.fitBounds(polylineIda.getBounds());
               //const speed = posicao.speed.toString();
               //const heading = posicao.heading.toString();
               accuracy = posicao.accuracy;
-               L.marker(latlonuser).addTo(map).bindPopup("Você!<br>Latitude: " +latuser+"<br> Longitude: "+ lonuser+" <br>FALTA INCLUIR OS NOVOS HORÁRIOS"+"<br>Bonelli-09/01/25").openPopup();
+               L.marker(latlonuser).addTo(map).bindPopup("Você!").openPopup();
               L.circle(latlonuser, accuracy).addTo(map);
-              //map.setView(latlonuser, 8); // ([latuser, lonuser], zoom)
-              map.locate({setView: true, maxZoom: 4});
+              //map.setView(latlonuser, 8);  //([latuser, lonuser], zoom)
+              map.locate({setView: true, maxZoom: 11});
             });
              } else {  
               localizacao = false;
              } 
   console.log("115-just outside anonymous",latuser,lonuser,latlonuser);
-
-  
-  
   //=============================================================
 
   L.marker(latlngsIda[0]).addTo(map)
-    .bindPopup('SÃO GONÇALO <BR> dia 15/01 ,<br> Retorno: dia 30/01 ')
+    .bindPopup('SÃO GONÇALO <BR> dia 15/01 ,<br> Retorno: dia 31/01 ')
     .openPopup();
     
   L.marker(latlngsIda[1]).addTo(map)
-    .bindPopup('SÃO PAULO <BR> dia 15~16 ,<br> Retorno: dia 29 ')
+    .bindPopup('SÃO PAULO <BR> dia 15 ,<br> Retorno: dia 30 ')
     .openPopup();
     
   // Santiago
   L.marker(latlngsIda[2]).addTo(map)
-    .bindPopup('Santiago <BR> ida: dia 16 - só conexão <BR> volta: dias 21-24')
+    .bindPopup('Santiago <BR> ida: 15 - só conexão <BR> volta: dias 23-26')
     .openPopup();
  //Calama
   L.marker(latlngsIda[3]).addTo(map)
-    .bindPopup('Calama<BR> ida: dia 16 só conexão <BR> volta: dia 21 só conexão')
+    .bindPopup('Calama<BR> ida: dia 15 só conexão <BR> volta: dia 22-23 só conexão')
     .openPopup(); 
  //São Pedro do Atacama
   L.marker(latlngsIda[4]).addTo(map)
-    .bindPopup('São Pedro <BR> do Atacama')
+    .bindPopup('São Pedro <BR> do Atacama<br> ida: 15/01<br>volta: 21/01')
     .openPopup();
      
     var imageUrl = './valle-la-luna.jpg',
@@ -170,14 +167,14 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 L.imageOverlay(imageUrl, 
 imageBounds).addTo(map); 
 
- var imageUrl = './Rock_Tree_Patrick Kursawe_DesiertoDali.jpeg',
+ var imageUrl = './desiertoDali.png',
     imageBounds = [ [-22.61498,-67.66597], [-23.61498, -68.66597]];
 L.imageOverlay(imageUrl, imageBounds).addTo(map);  
 
 
   // Salta
   L.marker(latlngsIda[8]).addTo(map)
-    .bindPopup('Salta')
+    .bindPopup('Salta<br> ida: 26/01<br>volta: 29/01')
     .openPopup();
     
   //Santiago
@@ -186,13 +183,13 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
   // Buenos Aires
 
   L.marker(latlngsIda[7]).addTo(map)
-    .bindPopup('Buenos Aires')
+    .bindPopup('Buenos Aires<br> conexão: 26/01')
     .openPopup();
 
   // Mendoza
 
   L.marker(latlngsVolta[1]).addTo(map)
-    .bindPopup('Mensoza')
+    .bindPopup('Mensoza<br> conexão: 29/30(01)')
     .openPopup();
 
   // 
