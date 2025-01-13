@@ -133,7 +133,7 @@ map.fitBounds(polylineIda.getBounds());
   //=============================================================
 
   L.marker(latlngsIda[0]).addTo(map)
-    .bindPopup('SÃO GONÇALO <BR> dia 15/01 ,<br> Retorno: dia 31/01 ')
+    .bindPopup('SÃO GONÇALO <BR> dia 14/01 Reunião às 23:00,<br> 15/01 Embarque às 02:40 <br> Retorno: dia 31/01, 00:05 ')
     .openPopup();
     
   L.marker(latlngsIda[1]).addTo(map)
