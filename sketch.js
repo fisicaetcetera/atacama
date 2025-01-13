@@ -44,7 +44,7 @@ function setup() {
    onAdd: function(map){
       var img = L.DomUtil.create('img');
       img.src = 'eniLogo.ico';
-      img.style.width = '30px';
+      img.style.width = '60px';
       return img;
       },
     onRemove: function(map){},
