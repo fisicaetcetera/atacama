@@ -84,12 +84,11 @@ var latlngsIda = [
     [-33.447487,-70.673676], //Santiago    
     [-34.603722, -58.381592], //Buenos Aires
     [-24.782932, -65.412155],  //Salta
-    [-32.88945870, -68.84583860]
- // Mendoza
+    [-32.88945870, -68.84583860] // Mendoza
 ];
 var latlngsVolta = [
     [-24.782932, -65.412155],  //Salta
-    [-32.8277, -68.7984],//Mendoza
+    [-32.8277, -68.7984], //Mendoza
     [-23.454, -46.534096] // Sao Paulo
 ];
 var polylineIda = L.polyline(latlngsIda, {color: 'blue'}).addTo(map);
